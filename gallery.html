@@ -1,0 +1,185 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="tophead">
+<div class="container links">
+<a href="index.html" target="_self" class="logo"><img src="collegelogo.png"></a>
+<div class="tophead-right" id="topheadRight">
+<a href="index.html" target="_self" class="menu">Home</a>
+<a href="about.html" target="_self" class="menu">About Us</a>
+<a href="courses.html" target="_self" class="menu">Courses</a>
+<a href="gallery.html" target="_self" class="menu active">Gallery</a>
+<a href="contact.html" target="_self" class="menu">Contact us</a>
+</div>
+</div>
+</header>
+
+<header id="mobile-header">
+<div class="mobile-logo">
+<a href="index.html" target="_self" class="logo"><img src="collegelogo.png"></a>
+<div id="menuToggle" class="menu-toggle">&#9776;</div></div>
+ <div class="side-menu" id="sideMenu">
+ <button id="closeMenu" class="close-btn">?</button>
+  <a href="index.html" target="_self" class="active">Home</a>
+<a href="about.html" target="_self">About Us</a>
+<a href="courses.html" target="_self">Courses</a>
+<a href="gallery.html" target="_self">Gallery</a>
+<a href="contact.html" target="_self">Contact us</a>
+</div>
+<div class="overlay" id="overLay">
+</div>
+</header> 
+
+<section class="sectioncampusimg">
+<div class="container campusimg">
+<div class="row_campusimg">
+<div class="column_campusimg">
+<h2><span style="color:orange">CAMPUS</span> GALLERY</h2>
+</div>
+</div>
+</div>
+</section>
+
+<section class="gallery-section campus">
+<div class="gallery-container">
+    <h2 class="gallery-title"><span style="color:orange">OUR</span> CAMPUS</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="gallerysc6.png" alt="campus 1">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="gallerysc10.png" alt="campus 2">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="gallerysc4.png" alt="campus 3">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="gallerysc5.png" alt="campus 4">
+      </div>
+	  <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="gallerysc1b.png" alt="campus 5">
+      </div>
+	  <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="gallerysc8.png" alt="campus 6">
+      </div>
+    </div>
+	</div>
+  </section>
+
+
+ <section class="gallery-section">
+ <div class="gallery-container">
+    <h2 class="gallery-title"><span style="color:orange">CAMPUS</span> FACULTY</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="faculty2.png" alt="faculty 1">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="faculty3.png" alt="faculty 2">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="faculty8.png" alt="faculty 3">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="faculty5.png" alt="faculty 4">
+      </div>
+	  <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="faculty6.png" alt="faculty 5">
+      </div>
+	  <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="faculty7.png" alt="faculty 6">
+      </div>
+	  </div>
+    </div>
+  </section>
+  
+  <section class="gallery-section games">
+ <div class="gallery-container">
+    <h2 class="gallery-title"><span style="color:orange">EVENTS</span> & GAMES</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="games2.png" alt="games 1">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="games9.png" alt="games 2">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="games8.png" alt="games 3">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="games1.png" alt="games 4">
+      </div>
+	  <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="games3.png" alt="games 5">
+      </div>
+	  <div class="gallery-item" onclick="openLightbox(this)">
+        <img src="games7.png" alt="games 6">
+      </div>
+	  </div>
+    </div>
+  </section>
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <a class="close-btn" onclick="closeLightbox()">&times;</a>
+    <img id="lightbox-img" src="" alt="Zoomed">
+  </div>
+<footer class="footer">
+<div class="container footer">
+<div class="row_footer">
+<div class="column_footer">
+<img src="collegelogo.png">
+<p>BGIET a premier institution committed to delivering skilled and quality education in line with Global Standards.</p>
+   </div>
+   <div class="column_footerlinks">
+<h3>QUICK LINKS</h3>
+<p> <a href="about.html" target="_self"> ABOUT US</a></p>
+   <p><a href="courses.html" target="_self">COURSES</a></p>
+   <p><a href="gallery.html" target="_self">GALLERY</a></p>
+   <p><a href="contact.html" target="_self">CONTACT US </a></p>
+   </div>
+   <div class="column_footer">
+<h3>ADDRESS</h3>
+<p>CONTACT: <a href="#"> 01672-278528,</a>
+           <a href="#"> 01672-278529</a></p>
+  <p>EMAIL <a href="#"> info@bgiet.ac.in</a></p>
+   <p>MOBILE NO. <a href="#"> +91-9876437493</a></p>
+   <p>TOLL FREE <a href="#"> 1800-8330-600</a></p>
+   </div>
+   <div class="column_footer">
+   <h3>FOLLOW US</h3>
+   <p><a href="https://www.facebook.com/BGIET"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/bggi.sangrur/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/@bhaigurdasgroupofinstituti7775"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/company/bggi"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></p>
+   </div>
+</div>
+</div>
+</footer>
+<section class="sectioncopyright">
+<div class="container copyright">
+<div class="row_copyright">
+<div class="column_copyright">
+ <p class="copyright-area">
+  Copyright � 2025 
+ <a href="about.html" target="_blank">Bhai Gurdas Group of Institutions.</a>
+  Powered by 
+ <a href="https://smartsolutionsit.com/" target="_blank">Smart Solutions.</a>
+ </p>
+</div>
+</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+
+
+
+</html>
